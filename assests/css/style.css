@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+    width: 500px;
+    margin-top: 70px;
+}
+
+fieldset {
+    font-size: 15pt;
+    padding: 20px 50px 50px 50px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 9px;
+    box-shadow: 1px 1px 27px rgb(192, 192, 192);
+}
+
+input {
+    height: 30px;
+    font-size: 15px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid rgba(60, 60, 60, 0.525);
+
+}
+
+::placeholder {
+    padding-left: 10px;
+    color: rgb(143, 141, 144);
+}
+
+input[name='user_name'] {
+    display: inline;
+    width: 180px;
+    margin: 0px 7px;
+}
+
+input[type='radio'] {
+    display: inline;
+    width: 18px;
+    margin: 0 20px;
+    height: 16px;
+}
+
+label[for='gender'] {
+    color: black;
+    margin-right: 50px;
+}
+
+button {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    color: aliceblue;
+    border: none;
+    padding: 10px 0;
+    background-color: green;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: rgb(27, 170, 27);
+}
