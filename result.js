@@ -7,10 +7,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
     else {
 
-        firebase
-            .database()
-            .ref('memo/')
-            .on('value', (data) => {
+        firebase.database().ref('memo/').on('value', (data) => {
                 var obj = data.val();
                 console.log(obj)
                 Object.keys(obj).forEach((key) => {
