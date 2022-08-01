@@ -32,6 +32,8 @@ let register = () => {
 
 }
 
+
+
 let loged = () => {
 
     let email = document.querySelector('#email')
