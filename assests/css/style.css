@@ -64,3 +64,19 @@ button {
 button:hover {
     background-color: rgb(27, 170, 27);
 }
+
+a{
+display: flex;
+justify-content: space-around;
+margin-bottom: 10px;
+}
+#logOut {
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    width: 300px;
+}
+#logOut:hover {
+    background-color: rgba(51, 51, 255, 0.754);
+    
+}
