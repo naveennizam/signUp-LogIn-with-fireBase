@@ -10,7 +10,7 @@ let register = () => {
     let password = document.querySelector('#password')
     console.log(password.value);
     firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
-        .then((res) => {
+        .then(() => {
             let user = {  //user is inbuilt by search by user uid
                 firstName: fname.value,
                 surName: sname.value,
@@ -19,7 +19,8 @@ let register = () => {
 
             }
             //users is authentication factor
-            firebase.database().ref(`users${res.user.uid}`).set(user).then(() => {
+            // firebase.database.ref(`memo/${res.memo.uid}`).set(user).then(()=>)
+            firebase.database().ref(`memo`).push().set(user).then(() => {
                 alert(`you are registered`)
                 window.location = './login.html'
             })
@@ -31,9 +32,6 @@ let register = () => {
         })
 
 }
-
-
-
 let loged = () => {
 
     let email = document.querySelector('#email')
@@ -55,3 +53,4 @@ let loged = () => {
         })
 
 }
+
